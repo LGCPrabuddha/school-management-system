@@ -1,3 +1,14 @@
+
+
+/* test */
+.bodycomboxTest{
+    border-style: solid;
+    border-color:   #001f4d;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 200px;
+}
+
 *{margin: 0; padding: 0;}
 
 a {
@@ -7,6 +18,10 @@ a {
 .text {
     color: #001f4d;
     text-align: center;
+}
+
+.rowas label{
+  padding-top: 20px;
 }
 
 .headernav{
@@ -301,11 +316,10 @@ a {
 .bodycombox{
     border-style: solid;
     border-color:   #001f4d;
-    height: 250px;
-    /*width: 200px;*/
     border-radius: 10px;
     margin-top: 20px;
 }
+
 
 .bodycombox p {
     margin-right: 15px;
@@ -413,7 +427,7 @@ a {
     height: 2px;
     background: #001f4d;
     position: absolute;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -461,6 +475,10 @@ span.round-tab:hover {
 
 .wizard .nav-tabs > li {
     width: 25%;
+}
+
+.wizardd .nav-tabs > li {
+    width: 33%;
 }
 
 .wizard li:after {
@@ -677,6 +695,12 @@ span.round-tab:hover {
     text-align: center;
 }
 
+.hedh5New{
+    font-size: 16px;
+    color: #001f4d;
+    margin-left: 120px;
+}
+
 .reporttext{
     color: #001f4d;
     text-align: center;
@@ -710,10 +734,36 @@ span.round-tab:hover {
 
 /* data view */
 .dataView{
-  font-size: 20px;
+  font-size: 16px;
   color: black;
 }
 
 /* data view */
+
+/* exam view */
+.subjectHeadr thead tr{
+  font-size: 16px;
+}
+
+.subjectHeadr thead tr th{
+  text-align: center;
+}
+/* exam view */
+
+/* exam risult insert page label */
+.insertLabel{
+  font-size: 25px;
+}
+/* exam risult insert page label end*/
+
+
+/* analysis input */
+.analysis input{
+  color:black;
+  width:110%;
+  font-size:12px;
+  height:30px;
+  margin-bottom:10px;
+}
 
 /* side dropdown end*/

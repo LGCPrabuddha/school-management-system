@@ -30,7 +30,7 @@
         <form class="" action="{{route('subjectSelection')}}" method="post">
           <div class="row">
             <div class="col-md-2" style="text-align: center;">
-              <h4 style="color:#001f4d;">Registration No</h4>
+              <h4 style="color:#001f4d;">Registr No</h4>
               <br>
               <input type="text" name="stdId" class="form-control" placeholder="Registration No" value="" required>
             </div>
@@ -75,7 +75,9 @@
           </div>
         </form>
       </div>
-      <br><br><br>
+      <br>
+      <div class="row" style="background:#001f4d; height: 1px;"></div>
+      <br><br>
       <!-- search subject -->
       <div class="row">
         <h2 style="color:#001f4d; text-align: center;">Search Student</h2>
@@ -123,7 +125,8 @@
           </div>
         </form>
       </div>
-
+      <br>
+      <div class="row" style="background:#001f4d; height: 1px;"></div>
       <!-- delete student -->
       <div class="row">
         <br><br><br>
@@ -145,6 +148,8 @@
           <br><br><br>
         </form>
       </div>
+      <br>
+      <div class="row" style="background:#001f4d; height: 1px;"></div>
     </div>
     <div class="col-md-2"></div>
   </div>
@@ -157,6 +162,19 @@
       @if(count($results)>0)
       <br><br><br>
       <h2 style="color: #001f4d;text-align: center;">Student details</h2>
+      <br>
+      <h3 style="color: #001f4d;">Select Subject</h3>
+      <div class="row">
+        <div class="col-md-4">
+          {{sub1}}
+        </div>
+        <div class="col-md-4">
+          {{sub2}}
+        </div>
+        <div class="col-md-4">
+          {{sub3}}
+        </div>
+      </div>
       <br><br>
       <div class="container col-md-12">
         <table class="table table-bordered">
@@ -180,6 +198,20 @@
         <br><br><br>
       </div>
       @else
+        <h3 style="color: #001f4d;">Select Subject</h3>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>{{$sub1}}</h4>
+          </div>
+          <div class="col-md-4">
+            <h4>{{$sub2}}</h4>
+          </div>
+          <div class="col-md-4">
+            <h4>{{$sub3}}</h4>
+          </div>
+        </div>
+        <br>
         <h4 class="alert alert-danger">No Select Subject</h4>
       @endif
     </div>
